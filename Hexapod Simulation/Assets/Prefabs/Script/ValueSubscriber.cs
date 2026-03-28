@@ -20,13 +20,13 @@ public class ValueSubscriber : MonoBehaviour
 
     void Callback(ServoAnglesMsg msg)
     {
-        // Debug.Log("Message received.");
-        servoAngles[0] = msg.vert_a;
-        servoAngles[1] = msg.vert_b;
-        servoAngles[2] = msg.vert_c;
-        servoAngles[3] = msg.vert_d;
-        servoAngles[4] = msg.vert_e;
-        servoAngles[5] = msg.vert_f;
+        Debug.Log("Message received.");
+        servoAngles[0] = 90f - msg.vert_a;
+        servoAngles[1] = 90f - msg.vert_b;
+        servoAngles[2] = 90f - msg.vert_c;
+        servoAngles[3] = 90f - msg.vert_d;
+        servoAngles[4] = 90f - msg.vert_e;
+        servoAngles[5] = 90f - msg.vert_f;
         servoAngles[6] = msg.horiz_a;
         servoAngles[7] = msg.horiz_b;
         servoAngles[8] = msg.horiz_c;
