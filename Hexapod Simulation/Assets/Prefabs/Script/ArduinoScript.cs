@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
 
+[RequireComponent(typeof(Rigidbody))]
 public class ArduinoScript : MonoBehaviour
 {
     // Vertical servomotors
@@ -36,10 +37,21 @@ public class ArduinoScript : MonoBehaviour
     // Position control variable
     public int position = 0;
 
+    // Flip control variable
+    public GameObject HexapodCopy;
+    public float jumpForce = 5f;
+    public float flipTorque = 10f;
+    public float offsetMultiplier = 1f;
+    private float timeSinceLastFlip = 0f;
+    private float flipCooldown = 2.4f;
+    private bool isFlipping = false;
+
+    private Rigidbody rb;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Public method to set servo angles from external scripts
@@ -60,17 +72,58 @@ public class ArduinoScript : MonoBehaviour
         servoVertF.targetAngle = Mathf.Clamp(angles[5], -45f, 65f);
 
         // Set horizontal servo angles
-        servoHorizA.targetAngle = Mathf.Clamp(angles[6], -45f, 45f);
-        servoHorizB.targetAngle = Mathf.Clamp(angles[7], -45f, 45f);
-        servoHorizC.targetAngle = Mathf.Clamp(angles[8], -45f, 45f);
-        servoHorizD.targetAngle = Mathf.Clamp(angles[9], -45f, 45f);
-        servoHorizE.targetAngle = Mathf.Clamp(angles[10], -45f, 45f);
-        servoHorizF.targetAngle = Mathf.Clamp(angles[11], -45f, 45f);
+        servoHorizA.targetAngle = Mathf.Clamp(angles[6]+30, -65f, 65f);
+        servoHorizB.targetAngle = Mathf.Clamp(angles[7], -65f, 65f);
+        servoHorizC.targetAngle = Mathf.Clamp(angles[8]-30, -65f, 65f);
+        servoHorizD.targetAngle = Mathf.Clamp(-angles[9]-30, -65f, 65f);
+        servoHorizE.targetAngle = Mathf.Clamp(-angles[10], -65f, 65f);
+        servoHorizF.targetAngle = Mathf.Clamp(-angles[11]+30, -65f, 65f);
+    }
+
+    public void DoAFlip(Vector2 flip_direction)
+    {
+        if (Time.time - timeSinceLastFlip >= flipCooldown)
+        {
+            // Turn off rendering to prevent visual glitches during the flip
+            Renderer[] renderers = transform.parent.GetComponentsInChildren<Renderer>();
+            foreach (Renderer renderer in renderers)
+            {
+                renderer.enabled = false;
+            }
+            // Turn on the copy of the hexapod to show the flip animation
+            HexapodCopy.SetActive(true);
+            Rigidbody rb_copy = HexapodCopy.GetComponent<Rigidbody>();
+            rb_copy.transform.position = transform.position;
+            rb_copy.transform.rotation = transform.rotation;
+            // Calculate the offset based on the flip direction and apply it to the jump force
+            Vector3 offset = new Vector3(flip_direction.normalized[0], 0, flip_direction.normalized[1]) * offsetMultiplier;
+            // Apply an upward force to the center of mass
+            rb_copy.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            // Apply a torque to induce the flip
+            rb_copy.AddTorque(Vector3.Cross(rb.transform.up, Vector3.RotateTowards(offset, rb.transform.forward, (Vector3.Angle(rb.transform.forward, offset)-Vector3.Angle(Vector3.forward, offset)) * Mathf.Deg2Rad, 0)).normalized * (flipTorque + 0.5f * Vector3.Angle(offset, Vector3.right) / 90f), ForceMode.Impulse);
+            timeSinceLastFlip = Time.time;
+            isFlipping = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Time.time - timeSinceLastFlip >= flipCooldown && isFlipping)
+        {
+            // Turn off rendering to prevent visual glitches during the flip
+            Renderer[] renderers = transform.parent.GetComponentsInChildren<Renderer>();
+            foreach (Renderer renderer in renderers)
+            {
+                renderer.enabled = true;
+            }
+            // Turn off the copy of the hexapod after the flip animation is done
+            rb.transform.position = HexapodCopy.GetComponent<Rigidbody>().transform.position;
+            // rb.transform.rotation = HexapodCopy.GetComponent<Rigidbody>().transform.rotation;
+            HexapodCopy.SetActive(false);
+            isFlipping = false;
+
+        }
     //     // Position inputs
     //     if (Input.GetKeyDown(KeyCode.Alpha1))
     //     {

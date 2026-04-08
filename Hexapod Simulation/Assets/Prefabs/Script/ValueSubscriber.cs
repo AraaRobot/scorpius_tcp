@@ -15,12 +15,13 @@ public class ValueSubscriber : MonoBehaviour
         ros = ROSConnection.GetOrCreateInstance();
         ros.RosIPAddress = "127.0.0.1";
         ros.RosPort = 10000;
-        ros.Subscribe<ServoAnglesMsg>("/scorpius/teleop", Callback);
+        ros.Subscribe<ServoAnglesMsg>("/scorpius/teleop", AnglesCallback);
+        ros.Subscribe<JoyMsg>("/scorpius/joy", InputCallback);
     }
 
-    void Callback(ServoAnglesMsg msg)
+    void AnglesCallback(ServoAnglesMsg msg)
     {
-        Debug.Log("Message received.");
+        // Debug.Log("Angles message received.");
         servoAngles[0] = 90f - msg.vert_a;
         servoAngles[1] = 90f - msg.vert_b;
         servoAngles[2] = 90f - msg.vert_c;
@@ -36,6 +37,17 @@ public class ValueSubscriber : MonoBehaviour
         // Debug.Log("Received servo angles: " + string.Join(", ", servoAngles));
 
         arduinoScript.SetServoAngles(servoAngles);
+    }
+
+    void InputCallback(JoyMsg msg)
+    {
+        // Debug.Log("Input message received.");
+        Vector2 flip_direction = new Vector2(msg.joy_data[1], msg.joy_data[0]);
+        if (msg.joy_data[14] == 1.0f)
+        {
+            arduinoScript.DoAFlip(flip_direction);
+            // Debug.Log("Flip command received. Direction: " + flip_direction);
+        }
     }
 
     public float[] GetReceivedValue()

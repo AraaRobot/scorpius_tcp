@@ -119,6 +119,88 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &126564173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 141973524211100703, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998165281657809636, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_Name
+      value: HexapodCopy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998165281657809636, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2403
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.815
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00379
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7143187785891396259, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+--- !u!1 &126564174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6998165281657809636, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+  m_PrefabInstance: {fileID: 126564173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &175835745
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,34 +466,190 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 18990001959592278, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 18990001959592278, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 43363433858766623, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 43363433858766623, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 79861651605322277, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: torque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 201252439044102520, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 201252439044102520, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 215070477630600954, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 532545521931212808, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 558361092487904943, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: torque
-      value: 1600
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 694249254319408386, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 727358630304190906, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 728714068374247225, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Mass
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 728714068374247225, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_Constraints
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 728714068374247225, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 728714068374247225, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1044939509456877424, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: torque
-      value: 1600
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 1265713363469387846, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: torque
-      value: 1600
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1535702391587513542, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780271271437450913, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: torque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114411119412921590, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2125111367752382638, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2194820726289787979, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207474094886438800, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247071945874927989, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781851791885868673, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781851791885868673, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028387068010832567, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028387068010832567, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330382831472512751, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749526712461314948, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749770818118463785, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: torque
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 3756809860699903720, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: torque
-      value: 1600
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3875150853160268371, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984083561192211470, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984083561192211470, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118955121173631632, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4118955121173631632, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325575633493850815, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4364043813666188100, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4513960459548731215, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4517693001301143709, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600993199623238957, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608340650464053624, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608340650464053624, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: flipTorque
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608340650464053624, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: HexapodCopy
+      value: 
+      objectReference: {fileID: 126564174}
     - target: {fileID: 4608340650464053624, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: forwardAngle
       value: 30
@@ -420,17 +658,97 @@ PrefabInstance:
       propertyPath: backwardAngle
       value: -30
       objectReference: {fileID: 0}
+    - target: {fileID: 4608340650464053624, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: offsetMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4821481946328366504, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 4955149793057268207, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: torque
-      value: 1600
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072916276983804557, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090530685612868591, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090530685612868591, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336857943531740721, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492986101228723389, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: torque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5623450890757424564, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742296191822225358, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5742296191822225358, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6124711797468043924, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: torque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6142679904015796074, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174447567328028224, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6363994336141433606, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594378177581331828, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684915290537316167, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788298253014889898, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788298253014889898, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842015704606563598, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6998165281657809636, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_Name
       value: Hexapod
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998165281657809636, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6998165281657809636, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7143187785891396259, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,13 +790,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7422015792616398043, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422015792616398043, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509893204061291221, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737718496581012453, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942284860504767144, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_LinearDamping
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942284860504767144, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950242716918082227, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7952021675894546385, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8012142998710728732, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: torque
-      value: 1600
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 8114321438646339174, guid: ede639c198f19b34ba891ac9333df559, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436941652797893668, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727132837234437073, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8850448368598264445, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: torque
+      value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155089431833373792, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199273670751936498, guid: ede639c198f19b34ba891ac9333df559, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -505,4 +875,5 @@ SceneRoots:
   - {fileID: 869724045}
   - {fileID: 8020887812981172151}
   - {fileID: 8101955685336712555}
+  - {fileID: 126564173}
   - {fileID: 1835374092814410154}
