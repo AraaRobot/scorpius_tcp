@@ -131,6 +131,54 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 328028749624808571, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 354269103521175864, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1094445725489031279, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188516464656276871, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387360646309926086, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498327152720986093, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3179067158353192860, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463252602558913482, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573134487120127186, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885792421482069117, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271713855937688984, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549718105516717780, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6998165281657809636, guid: b9a3d688ef3494f12941f3477fa5e510, type: 3}
       propertyPath: m_Name
       value: HexapodCopy
