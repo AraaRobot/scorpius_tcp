@@ -118,7 +118,7 @@ public class ArduinoScript : MonoBehaviour
                 renderer.enabled = true;
             }
             // Turn off the copy of the hexapod after the flip animation is done
-            rb.transform.position = HexapodCopy.GetComponent<Rigidbody>().transform.position;
+            // rb.transform.position = HexapodCopy.GetComponent<Rigidbody>().transform.position;
             // rb.transform.rotation = HexapodCopy.GetComponent<Rigidbody>().transform.rotation;
             HexapodCopy.SetActive(false);
             isFlipping = false;
