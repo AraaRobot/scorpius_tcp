@@ -22,18 +22,18 @@ public class ValueSubscriber : MonoBehaviour
     void AnglesCallback(ServoAnglesMsg msg)
     {
         // Debug.Log("Angles message received.");
-        servoAngles[0] = 90f - msg.vert_a;
-        servoAngles[1] = 90f - msg.vert_b;
-        servoAngles[2] = 90f - msg.vert_c;
-        servoAngles[3] = 90f - msg.vert_d;
-        servoAngles[4] = 90f - msg.vert_e;
-        servoAngles[5] = 90f - msg.vert_f;
-        servoAngles[6] = msg.horiz_a;
-        servoAngles[7] = msg.horiz_b;
-        servoAngles[8] = msg.horiz_c;
-        servoAngles[9] = msg.horiz_d;
-        servoAngles[10] = msg.horiz_e;
-        servoAngles[11] = msg.horiz_f;
+        servoAngles[0] = msg.vert_a + 90f;
+        servoAngles[1] = msg.vert_b + 90f;
+        servoAngles[2] = msg.vert_c + 90f;
+        servoAngles[3] = msg.vert_d + 90f;
+        servoAngles[4] = msg.vert_e + 90f;
+        servoAngles[5] = msg.vert_f + 90f;
+        servoAngles[6] = -msg.horiz_a;
+        servoAngles[7] = -msg.horiz_b;
+        servoAngles[8] = -msg.horiz_c;
+        servoAngles[9] = -msg.horiz_d;
+        servoAngles[10] = -msg.horiz_e;
+        servoAngles[11] = -msg.horiz_f;
         // Debug.Log("Received servo angles: " + string.Join(", ", servoAngles));
 
         arduinoScript.SetServoAngles(servoAngles);

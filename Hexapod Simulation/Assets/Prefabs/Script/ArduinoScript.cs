@@ -100,7 +100,7 @@ public class ArduinoScript : MonoBehaviour
             // Apply an upward force to the center of mass
             rb_copy.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             // Apply a torque to induce the flip
-            rb_copy.AddTorque(Vector3.Cross(rb.transform.up, Vector3.RotateTowards(offset, rb.transform.forward, (Vector3.Angle(rb.transform.forward, offset)-Vector3.Angle(Vector3.forward, offset)) * Mathf.Deg2Rad, 0)).normalized * (flipTorque + 0.5f * Vector3.Angle(offset, Vector3.right) / 90f), ForceMode.Impulse);
+            rb_copy.AddTorque(-Vector3.Cross(rb.transform.up, Vector3.RotateTowards(offset, rb.transform.forward, (Vector3.Angle(rb.transform.forward, offset)-Vector3.Angle(Vector3.forward, offset)) * Mathf.Deg2Rad, 0)).normalized * (flipTorque + 0.5f * Vector3.Angle(offset, Vector3.right) / 90f), ForceMode.Impulse);
             timeSinceLastFlip = Time.time;
             isFlipping = true;
         }
